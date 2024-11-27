@@ -1,0 +1,14 @@
+
+set ZADANIA := A B C D E;
+
+set RELACJE := (A, C) (B, D) (B, E) (D, E);
+
+
+param: 	NOMINALNY_CZAS 	KOSZT_SKROCENIA 	MINIMALNY_CZAS :=
+	A	8				95					7
+	B	17				75					14
+	C	9				10					5
+	D	16				65					9
+	E	5				85					4;
+
+param K := 100;

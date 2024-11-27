@@ -1,0 +1,13 @@
+reset;
+
+model 'C:\Users\bartek\Desktop\WSYZ\Lab 2\lab_2_4.mod';
+
+data 'C:\Users\bartek\Desktop\WSYZ\Lab 2\lab_2_4.dat';
+
+solve;
+
+display JADLOSPIS;
+
+display funkcje_ceny;
+
+display SKLAD;

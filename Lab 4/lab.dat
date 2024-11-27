@@ -1,0 +1,49 @@
+set ZADANIA := 
+	Fundamenty
+	A_Sciany 	A_Dach 	A_Okna 	A_Wnetrze
+	B_Sciany 	B_Dach 	B_Okna 	B_Wnetrze
+	C_Sciany 	C_Dach 	C_Okna 	C_Wnetrze
+	D_Sciany 	D_Dach 	D_Okna 	D_Wnetrze
+	E_Sciany 	E_Dach 	E_Okna 	E_Wnetrze
+	Alejki 		Zielen 	Wykonczenie;
+
+set RELACJE :=
+	(Fundamenty, A_Sciany) (Fundamenty, B_Sciany) (Fundamenty, C_Sciany) (Fundamenty, D_Sciany) (Fundamenty, E_Sciany)
+	(A_Dach, C_Sciany) (B_Dach, C_Sciany) (C_Dach, D_Sciany) (C_Dach, E_Sciany)
+	(A_Sciany, A_Dach) (A_Dach, A_Okna) (A_Okna, A_Wnetrze)
+	(B_Sciany, B_Dach) (B_Dach, B_Okna) (B_Okna, B_Wnetrze)
+	(C_Sciany, C_Dach) (C_Dach, C_Okna) (C_Okna, C_Wnetrze)
+	(D_Sciany, D_Dach) (D_Dach, D_Okna) (D_Okna, D_Wnetrze)
+	(E_Sciany, E_Dach) (E_Dach, E_Okna) (E_Okna, E_Wnetrze)
+	(A_Okna, Zielen) (B_Okna, Zielen) (C_Okna, Zielen) (D_Okna, Zielen) (E_Okna, Zielen)
+	(A_Okna, Alejki)  (B_Okna, Alejki)  (C_Okna, Alejki)  (D_Okna, Alejki)  (E_Okna, Alejki)
+	(A_Wnetrze, Wykonczenie)  (B_Wnetrze, Wykonczenie)  (C_Wnetrze, Wykonczenie)  (D_Wnetrze, Wykonczenie)  (E_Wnetrze, Wykonczenie)
+	(Zielen, Wykonczenie) (Alejki, Wykonczenie);
+
+param:			NOMINALNY_CZAS		MINIMALNY_CZAS	KOSZT_SKROCENIA :=
+	Fundamenty	50					50				0
+	A_Sciany	60					45				3750
+	A_Dach		40					30				2250
+	A_Okna		20					15				3000
+	A_Wnetrze	70					55				2250
+	B_Sciany	50					40				1500
+	B_Dach		40					30				3750
+	B_Okna		30					20				4500
+	B_Wnetrze	50					40				3750
+	C_Sciany	50					40				1500
+	C_Dach		40					30				3750
+	C_Okna		30					20				4500
+	C_Wnetrze	50					40				3750
+	D_Sciany 	70					55				3000
+	D_Dach		50					35				3750
+	D_Okna		30					25				4500
+	D_Wnetrze	30					25				3000
+	E_Sciany	70					55				3000
+	E_Dach		50					35				3750
+	E_Okna		30					25				4500
+	E_Wnetrze	30					25				3000
+	Alejki		25					15				1500
+	Zielen		20					15				1500
+	Wykonczenie	30					30				0	; 
+
+param K := 200000;

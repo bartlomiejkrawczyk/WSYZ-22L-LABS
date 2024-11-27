@@ -1,0 +1,15 @@
+
+param PROFIT := 
+	1 31
+	2 7
+	3 74;
+
+param PER_HOUR := 
+	1 200
+	2 140
+	3 120;
+	
+param QUANTITY := 
+	1 4000
+	2 3000
+	3 2500;

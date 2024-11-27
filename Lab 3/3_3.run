@@ -1,0 +1,11 @@
+reset;
+
+model '3_3.mod';
+
+data '3_3.dat';
+
+solve;
+
+display czas;
+
+display czas_startu_pracy;

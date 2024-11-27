@@ -1,0 +1,14 @@
+reset;
+
+model 'C:\Users\Bart³omiej Krawczyk\Documents\Studia\WSYZ\Lab 4\lab-d.mod';
+
+data 'C:\Users\Bart³omiej Krawczyk\Documents\Studia\WSYZ\Lab 4\pd.dat';
+
+solve;
+
+display T_nom;
+display T_min;
+
+display T_k;
+
+display { z in ZADANIA: zapas[z] < 1e-7 };

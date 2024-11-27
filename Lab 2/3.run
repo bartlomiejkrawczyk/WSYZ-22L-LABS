@@ -1,0 +1,11 @@
+reset;
+
+model 'C:\Users\bartek\Desktop\WSYZ\Lab 2\1.mod';
+
+data 'C:\Users\bartek\Desktop\WSYZ\Lab 2\2.dat';
+
+solve;
+
+display odchylka;
+
+display czasy;

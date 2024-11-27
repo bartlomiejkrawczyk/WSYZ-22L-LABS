@@ -1,0 +1,5 @@
+income = 303833
+
+rods = 3833.33
+angles = 0
+channels = 2500

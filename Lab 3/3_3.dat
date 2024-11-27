@@ -1,0 +1,22 @@
+set BLOKI := A B C D E;
+set PRACE := Sciany Dach Okna Wykonczenie;
+set DODATKI := Alejki Zielen;
+
+param WYLEWKA := 50;
+param WYKONCZENIE := 30;
+
+set KOLEJNOSC := (A, C) (B, C) (C, E) (C, D);
+
+set KOLEJNOSC_PRAC := (Sciany, Dach) (Dach, Okna) (Okna, Wykonczenie);
+
+param CZASY_PRACY : A B C D E :=
+	Sciany 60 50 50 70 70
+	Dach 40 40 40 50 50 
+	Okna 20 30 30 30 30
+	Wykonczenie 70 50 50 30 30;
+	
+param CZASY_PRACY_DODATKI := 
+	Alejki 25
+	Zielen 20;
+	
+

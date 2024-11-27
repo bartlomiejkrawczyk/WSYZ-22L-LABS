@@ -1,0 +1,12 @@
+reset;
+
+model C:\Users\bartek\Desktop\WSYZ\model_produkcyjny.mod
+
+option solver cplex;
+
+solve;
+
+display income;
+
+display rods, angles, channels;
+

@@ -1,0 +1,43 @@
+set BLOKI := A B C D E;
+set ZADANIA := Sciany Dach Okna Wykonczenie;
+
+set RELACJE := (A, C) (B, C) (C, E) (C, D);
+set ZADANIA_RELACJE := (Sciany, Dach) (Dach, Okna) (Okna, Wykonczenie);
+
+param CZAS_FUNDAMENTY := 50;
+
+param NOMINALNY_CZAS: 	Sciany 	Dach 	Okna 	Wykonczenie :=
+	A					60		40		20		70
+	B					50		40		30		50
+	C					50		40		30		50
+	D					70		50		30		30
+	E					70		50		30		30
+;
+	
+param MINIMALNY_CZAS: 	Sciany 	Dach 	Okna 	Wykonczenie :=
+	A					45		30		15		55
+	B					40		30		20		40
+	C					40		30		20		40
+	D					55		35		25		25
+	E					55		35		25		25
+;
+
+param PRACOWNICY: 		Sciany 	Dach 	Okna 	Wykonczenie :=
+	A					25		15		20		15
+	B					10		25		30		25
+	C					10		25		30		25
+	D					20		25		30		20
+	E					20		25		30		20
+;
+
+set WYKANCZANIE := Alejki Zielen;
+
+param: 		NOMINALNY_CZAS_WYK 	PRACOWNICY_WYK 	MINIMALNY_CZAS_WYK :=
+	Alejki	25					10				15
+	Zielen	20					10				15;
+
+param CZAS_OSTATNIE_PRACE := 30;
+
+param WYNAGRODZENIE := 1200; # 150 * 8;
+
+param K := 200000;

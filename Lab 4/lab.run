@@ -1,0 +1,15 @@
+reset;
+option solver cplex;
+model 'C:\Users\Bart³omiej Krawczyk\Documents\Studia\WSYZ\Lab 4\lab-d.mod';
+
+data 'C:\Users\Bart³omiej Krawczyk\Documents\Studia\WSYZ\Lab 4\lab.dat';
+
+solve;
+
+display {z in ZADANIA: zapas[z] < 1e-7 };
+
+display T_nom;
+
+display T_min;
+
+display T_k;
